@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "scout": {
+      "command": "bash",
+      "args": ["./scripts/run-scout-mcp.sh"]
+    }
+  }
+}
+

@@ -1,0 +1,46 @@
+{
+  "name": "scout",
+  "version": "0.1.0",
+  "description": "Scout integration for Codex. Adds Scout MCP tools and coordination guidance for discovering agents, sending messages, and asking agents for work.",
+  "author": {
+    "name": "OpenScout"
+  },
+  "homepage": "https://arach.github.io/codex-scout/",
+  "repository": "https://github.com/arach/codex-scout",
+  "license": "UNLICENSED",
+  "keywords": [
+    "openscout",
+    "scout",
+    "codex",
+    "mcp",
+    "agents",
+    "coordination"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Scout",
+    "shortDescription": "Coordinate Codex with Scout-known agents",
+    "longDescription": "Scout gives Codex access to OpenScout's local broker for agent discovery, precise handle resolution, direct messages, and ask-style work handoffs.",
+    "developerName": "OpenScout",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://arach.github.io/codex-scout/",
+    "privacyPolicyURL": "https://openscout.app/privacy",
+    "termsOfServiceURL": "https://openscout.app/docs/current-posture",
+    "defaultPrompt": [
+      "Ask a Scout agent to review this",
+      "Show me which Scout agents are online",
+      "Send a status update through Scout"
+    ],
+    "brandColor": "#b5421c",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  }
+}
+
