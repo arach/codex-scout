@@ -17,24 +17,36 @@ Repository: <https://github.com/arach/codex-scout>
 
 ## Install Locally
 
-From Codex, add this repository as a local plugin marketplace, then install the
-`scout` plugin from the OpenScout marketplace.
+From Codex, add this repository as a local plugin marketplace:
 
 For local development, point Codex at this checkout:
 
 ```text
-/plugin marketplace add /Users/art/dev/codex-scout
+/plugin marketplace add /Users/arach/dev/codex-scout
+```
+
+Codex records marketplaces in `~/.codex/config.toml`. If the plugin does not
+appear in your next session after adding the marketplace, enable it explicitly:
+
+```toml
+[plugins."scout@openscout"]
+enabled = true
 ```
 
 ## Install From GitHub
-
-Once published:
 
 ```text
 /plugin marketplace add arach/codex-scout
 ```
 
-Then install `scout` from the OpenScout marketplace in Codex.
+The marketplace declares the `scout` plugin as installed by default. If your
+Codex build only adds the marketplace and does not enable the plugin, add this
+entry to `~/.codex/config.toml`:
+
+```toml
+[plugins."scout@openscout"]
+enabled = true
+```
 
 ## Plugin Behavior
 
@@ -62,4 +74,3 @@ Pages can serve it from the `docs/` folder on `main`.
 This is an experimental local developer package. It depends on a local
 OpenScout broker and a `scout` CLI, or Bun so the wrapper can run
 `bunx @openscout/scout`.
-
